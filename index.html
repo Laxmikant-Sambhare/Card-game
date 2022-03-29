@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="blackjack.css" />
+    <script src="blackjack.js"></script>
+  </head>
+
+  <body style="background-image: url(./Background/pokerdd.jpg)">
+    <script>
+      function nxtgame() {
+        window.location.reload(true);
+      }
+    </script>
+    <div class="head">
+    <h1 id="Title" style="text-align: center;">Black Jack</h1>
+</div>
+    <hr />
+    <div>
+        <div class="container">
+    <div id="dealer-cards">
+        <h2 style="text-align: center;">Dealer: <span id="dealer-sum"></span></h2>
+      <img id="hidden" src="./cards/BACK.png" />
+    </div>
+    <div id="your-cards">
+        <h2 style="text-align: center;">You: <span id="your-sum"></span></h2>
+    </div>
+</div>
+
+    <br />
+    <div class="container1">
+    <button id="hit">Hit</button>
+    <button id="stay">Stay</button>
+    <button id="nxt-game" onclick="nxtgame()">Next Game</button>
+    <p id="results"></p>
+</div>
+  </body>
+</html>
